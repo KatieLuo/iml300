@@ -1,5 +1,23 @@
 /* CSS button from https://getcssscan.com/css-buttons-examples*/
 /*grain from https://css-tricks.com/snippets/css/animated-grainy-texture/*/
+
+/*------1------*/
+.page-1 {
+
+    background: rgb(236, 236, 236);
+    background: linear-gradient(180deg, rgba(236, 236, 236, 1) 0%, rgba(238, 96, 85, 1) 100%);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .button-86 {
     all: unset;
     width: 100px;
@@ -19,7 +37,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-   font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
 
@@ -28,8 +46,8 @@
     padding-bottom: 50px;
     padding-left: 80px;
     float: left;
-    
-/*
+
+    /*
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -45,7 +63,7 @@
     right: 0;
     z-index: -99999;
     transition: all .4s;
-    
+
 
 }
 
@@ -54,7 +72,7 @@
     width: 100%;
     height: 100%;
     background: #28282d;
-/*    border-radius: 10px;*/
+    /*    border-radius: 10px;*/
 }
 
 .button-86::after {
@@ -65,14 +83,14 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 50px;
-    
+
 }
 
 .button-86:hover::before {
     transform: translate(5%, 20%);
     width: 110%;
     height: 110%;
-    
+
 }
 
 .button-86:hover::after {
@@ -80,13 +98,13 @@
     transform: translate(0, 0);
     width: 100%;
     height: 100%;
-    
+
 }
 
 .button-86:active::after {
     transition: 0s;
     transform: translate(0, 5%);
-    
+
 }
 
 
@@ -113,8 +131,8 @@
 
 body {
     margin: 0;
-    background: rgb(236,236,236);
-background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(96,211,148,1) 100%);
+    background: rgb(236, 236, 236);
+    background: linear-gradient(180deg, rgba(236, 236, 236, 1) 0%, rgba(96, 211, 148, 1) 100%);
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
 }
@@ -122,61 +140,72 @@ background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(96,211,148,1) 1
 
 h1 {
     text-align: center;
-/*    margin-bottom: 1em;*/
+    /*    margin-bottom: 1em;*/
     font-family: 'Eczar', serif;
     font-weight: 400;
     font-size: 140px;
-    color: #60D394; 
+    color: #60D394;
 }
 
 b {
-  font-weight: bold;
+    font-family: 'Eczar', serif;
+    font-weight: bold;
 }
 
 
 
 h2 {
     text-align: center;
-    color: #555;
-    margin-bottom: 30;
+    /*    margin-bottom: 1em;*/
+    font-family: 'Eczar', serif;
+    font-weight: 400;
+    font-size: 140px;
+    color: #EE6055;
 }
 
 .page-header {
-  height: 100vh;
+    height: 100vh;
 }
 
 .page-header:after {
-  animation: grain 8s steps(10) infinite;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalwhite.png);
-  content: "";
-  height: 300%;
-  left: -50%;
-  opacity: 0.5;
+    animation: grain 8s steps(10) infinite;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalwhite.png);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.5;
     mix-blend-mode: multiply;
-  position: fixed;
-  top: -110%;
-  width: 300%;
+    position: fixed;
+    top: -110%;
+    width: 300%;
 }
 
 @keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-/*  10% { transform:translate(-5%, -10%) }*/
-  20% { transform:translate(-15%, 5%) }
-/*  30% { transform:translate(7%, -25%) }*/
-  40% { transform:translate(-5%, 25%) }
-/*  50% { transform:translate(-15%, 10%) }*/
-  60% { transform:translate(15%, 0%) }
-/*  70% { transform:translate(0%, 15%) }*/
-  80% { transform:translate(3%, 35%) }
-/*  90% { transform:translate(-10%, 10%) }*/
-}
 
-/*------1------*/
-.page-1 {
- 
-background: rgb(236,236,236);
-background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(238,96,85,1) 100%);
-  height: 100vh;
-  padding: 0;
-  margin: 0;
+    0%,
+    100% {
+        transform: translate(0, 0)
+    }
+
+    /*  10% { transform:translate(-5%, -10%) }*/
+    20% {
+        transform: translate(-15%, 5%)
+    }
+
+    /*  30% { transform:translate(7%, -25%) }*/
+    40% {
+        transform: translate(-5%, 25%)
+    }
+
+    /*  50% { transform:translate(-15%, 10%) }*/
+    60% {
+        transform: translate(15%, 0%)
+    }
+
+    /*  70% { transform:translate(0%, 15%) }*/
+    80% {
+        transform: translate(3%, 35%)
+    }
+
+    /*  90% { transform:translate(-10%, 10%) }*/
 }
