@@ -7,13 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="s">
-    <script></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+    <script src="p5sketch/https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="p5sketch/p5.js"></script>
+    <script src="p5sketch/p5.sound.min.js"></script>
+    <meta charset="utf-8">
     <script src="background.js"></script>
-     <!-- Include firebase scripts from CDN      -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <!-- Include firebase scripts from CDN      -->
+    <!--    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+
 
     <!-- Import the webpage's javascript file -->
     <script src="script.js" defer></script>
@@ -24,9 +27,15 @@
 </head>
 
 <body>
-    <h1> Asian Americans in Media</h1>
+<!--     <script class = "sketch" src="p5sketch/sketch.js"></script>-->
+    <h1 class = "layer"> Asian Americans in Media</h1>
+
+    <p class = "layer">What does it take to move representation forward? Do we want thoughtful and deep characters who tell unique Asian American stories? Or do we simply want to be represented and a part of everyday cinema? To push representation forward, we must know what exactly we want.
+    </p>
+    <p class = "layer">
+        To conclude, write down what you want to see in Asian American representation. </p>
     <!-- This input form controls submission of text input -->
-    <div class="container">
+    <div class="container" class = "layer">
 
 
         <form id="text-input-form" onsubmit="return false">
@@ -36,4 +45,6 @@
 
         <div id="chat-container"></div>
     </div>
+
+
 </body></html>
