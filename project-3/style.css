@@ -1,15 +1,434 @@
 /*------1------*/
 .homePageText {
     position: absolute;
-    top:0;
-    bottom:0;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    height: 100vh;
-    font-size: 100px;
-    margin-left: 25px;
+    font-size: 90px;
     font-family: "Poppins", sans-serif;
-    line-height: 100%;
+    line-height: 120%;
+    background-image: url("https://i.ytimg.com/vi/tx72zsQa2qw/maxresdefault.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
-p.homePagetext span.green {background:color: #6bd66b;}
+
+/*hover adapted from https://css-tricks.com/css-link-hover-effects/*/
+a {
+    background: linear-gradient(0deg, red, red) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    font-weight: 700;
+}
+
+a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+
+}
+
+body {
+    font-size: 2em;
+    /*  text-align: center;*/
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+}
+
+/*
+a.b:link {
+    color: black;
+    background-color: #20639b;
+    text-decoration: none;
+}
+
+a.o:link {
+    color: white;
+    background-color: #4d4d4d;
+    text-decoration: none;
+}
+*/
+
+
+/*------2------*/
+
+h1 {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+}
+
+.recentNews {
+    background-color: green
+}
+
+.recentNews .news-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'poppins', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.recentNews .ct-blog {
+    margin-bottom: 30px;
+}
+
+.ct-blog .inner {
+    background-color: #FFF;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.ct-blog .inner:hover {
+    background-color: #e6e6e6;
+}
+
+.ct-blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+}
+
+.ct-blog .fauxcrop img {
+    width: 100%;
+}
+
+.ct-blog-content {
+    display: table;
+    padding: 30px 0 28px;
+}
+
+.ct-blog-content .ct-blog-date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    font-family: "poppins", sans-serif;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+
+
+.ct-blog-content .ct-blog-header {
+    color: #000;
+    display: table-cell;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+
+.btn-news {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.btn-news.btn-contests a {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-news.btn-contests a:hover {
+    color: #000;
+}
+
+/*------3------*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    /*1984*/
+    background-image: url(https://i.ytimg.com/vi/Hb3gdUrIC4Q/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.2s;
+}
+
+#header {
+    font-size: 6em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding-top: 3vh;
+    min-width: 300px;
+}
+
+#header::after {
+    content: "Recent Representation";
+    font-family: "Poppins", sans-serif;
+    font-size: 0.2em;
+    display: block;
+    font-weight: 100;
+}
+
+#footer {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    width: 300px;
+    margin: 5vh auto;
+    padding: 0;
+    color: white;
+}
+
+li {
+    text-align: center;
+    width: 50px;
+    margin: 5px;
+    float: left;
+    font-weight: 100;
+}
+
+li:nth-child(1) {
+    font-weight: 700;
+}
+
+#resize_animation {
+    color: #fff;
+    position: absolute;
+    display: block;
+    position: relative;
+    width: 140px;
+    margin: 12vh auto 0 auto;
+    text-align: center;
+    font-weight: 100;
+}
+
+#resize_animation::before {
+    content: "<";
+    position: absolute;
+    right: 140px;
+    animation: left_arrow 2s ease infinite alternate;
+}
+
+@keyframes left_arrow {
+    0% {
+        right: 140px;
+    }
+
+    100% {
+        right: 150px;
+    }
+}
+
+#resize_animation::after {
+    content: ">";
+    position: absolute;
+    left: 140px;
+    animation: right_arrow 2s ease infinite alternate;
+}
+
+@keyframes right_arrow {
+    0% {
+        left: 140px;
+    }
+
+    100% {
+        left: 150px;
+    }
+}
+
+/*1994*/
+@media (max-width: 1500px) {
+    #content {
+        background-image: url(https://daphnechicagodotcom.files.wordpress.com/2017/03/hooker.jpg);
+    }
+
+    li:nth-child(1) {
+        font-weight: 100;
+    }
+
+    li:nth-child(2) {
+        font-weight: 700;
+    }
+}
+
+/*2002*/
+@media (max-width: 1350px) {
+    #content {
+        background-image: url(https://simkl.in/episodes/32/3210772cae0cb3552_w.jpg);
+    }
+
+    li:nth-child(2) {
+        font-weight: 100;
+    }
+
+    li:nth-child(3) {
+        font-weight: 700;
+    }
+}
+
+/*2011*/
+@media (max-width: 1200px) {
+    #content {
+        background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F04%2F3-2000.jpg);
+    }
+
+    li:nth-child(3) {
+        font-weight: 100;
+    }
+
+    li:nth-child(4) {
+        font-weight: 700;
+    }
+}
+
+/*2020*/
+@media (max-width: 1050px) {
+    #content {
+        background-image: url(https://d279m997dpfwgl.cloudfront.net/wp/2022/03/0331_everything-once-2.jpg);
+    }
+
+    li:nth-child(4) {
+        font-weight: 100;
+    }
+
+    li:nth-child(5) {
+        font-weight: 700;
+    }
+}
+
+/*------4------*/
+
+#container {
+    text-align: center;
+    margin: 50px;
+}
+
+.wrap {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.wrap p {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: -8%;
+    padding: 5px;
+    text-align: center;
+    width: 113%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.7);
+    transition: 1s;
+}
+
+.wrap img {
+    display: block;
+    width: 300px;
+    /*    height:200px;*/
+    margin: 5px;
+    -webkit-transition: opacity 0.26s ease-out;
+    -moz-transition: opacity 0.26s ease-out;
+    -ms-transition: opacity 0.26s ease-out;
+    -o-transition: opacity 0.26s ease-out;
+    transition: opacity 0.26s ease-out;
+    transition: 500ms;
+}
+
+#container:hover img {
+    opacity: 0.5;
+}
+
+#container:hover .wrap:hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 2;
+    position: relative;
+    transition: 500ms;
+}
+
+.wrap:hover p {
+    opacity: 1;
+}
+
+
+/*------5------*/
+
+.container {
+    /*    background-color: yellow;*/
+    margin: 30px;
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+}
+
+#chat-container {
+    font-size: 30px;
+    /*   background-color: yellow; */
+
+    margin: auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.response {
+    background-color: #b299ed;
+    color: white;
+    margin: 0.2em;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0 0 50px #fff;
+
+    /*   border: 1px solid white; */
+}
