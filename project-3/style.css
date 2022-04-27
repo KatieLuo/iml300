@@ -71,7 +71,7 @@ p {
 }
 
 .recentNews {
-    background-color: green
+    background-color: red;
 }
 
 .recentNews .news-title {
@@ -405,6 +405,7 @@ p{
     /*    background-color: yellow;*/
     margin: 30px;
     text-align: center;
+    
 }
 
 input {
