@@ -355,7 +355,7 @@ h1 {
     font-size: 1em;
     padding: 10px;
     color: #fff;
-    border: 2px solid red;
+    border: 2px solid;
     border-radius: 50px;
     text-decoration: none;
     cursor: pointer;
@@ -365,7 +365,7 @@ h1 {
 }
 
 .button:hover {
-    background: red;
+    background: black;
 }
 
 .overlay {
