@@ -486,7 +486,7 @@ p{
 .wrap p {
     position: absolute;
     opacity: 0;
-    top: 20%;
+    top: 10%;
     left: -8%;
     padding: 5px;
     text-align: center;
