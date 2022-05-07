@@ -251,7 +251,7 @@ li:nth-child(1) {
 }
 
 #resize_animation {
-    color: yellow;
+    color: red;
     position: absolute;
     display: block;
     position: relative;
@@ -456,8 +456,8 @@ li:nth-child(1) {
     color: white;
     font-size: 15px;
     /*    background: rgba(0, 0, 0, 0.4);*/
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: auto;
+    padding-right: auto;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
