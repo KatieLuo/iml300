@@ -6,7 +6,7 @@ const firebaseConfig = {
     storageBucket: "imlproject3.appspot.com",
     messagingSenderId: "7402682038",
     appId: "1:7402682038:web:ccc6487d42e2c0304f1817"
-  };
+};
 
 
 firebase.initializeApp(firebaseConfig);
@@ -18,7 +18,7 @@ let dbRef = db.ref("text");
 //    name: "q",
 //    word: "hello"
 //  }
- 
+
 // dbRef.push(data);
 
 
@@ -30,11 +30,11 @@ let share = document.getElementById("text-input-submit");
 dbRef.on("child_added", gotText);
 
 function gotText(data) {
-  let id = data.key;
-  let value = data.val();
-  console.log(value);
-  chatContainer.innerHTML =
-    "<div class='response'>" + value + "</div>" + chatContainer.innerHTML;
+    let id = data.key;
+    let value = data.val();
+    console.log(value);
+    chatContainer.innerHTML =
+        "<div class='response'>" + value + "</div>" + chatContainer.innerHTML;
 }
 
 //click button will run this function
@@ -44,16 +44,16 @@ textInputSubmit.addEventListener("click", submitText);
 let textContainerElement = document.getElementById("text-input-entry");
 
 function submitText() {
-  let textToSubmit = textContainerElement.value; //gets text value from textbox
-  let newKey = dbRef.push().key; //ask firebase to give you a new key / 'name'
-  let updates = {}; //send firebase list of values
-  updates[newKey] = textToSubmit;
-  dbRef.update(updates);
+    let textToSubmit = textContainerElement.value; //gets text value from textbox
+    let newKey = dbRef.push().key; //ask firebase to give you a new key / 'name'
+    let updates = {}; //send firebase list of values
+    updates[newKey] = textToSubmit;
+    dbRef.update(updates);
 }
 
 function submitlock() {
-  entry.remove();
-  share.value = "Thanks for telling me.";
-  share.disabled = true;
-  share.style.width = "70%";
+    entry.remove();
+    share.value = "Refresh this page to subit again 🎇";
+    share.disabled = true;
+    share.style.width = "70%";
 }
